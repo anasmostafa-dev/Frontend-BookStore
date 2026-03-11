@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    overflow-y: overlay;
+}
+
+button {
+    background: #1e2939;
+    color: white;
+    border-radius: 14px;
+    padding: 7px 25px;
+    transition: 0.3s all;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button:hover {
+    background: #1e2939ed;
+}
+
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 8px;
+    position: relative;
+}
+
+h3::before {
+    position: absolute;
+    content: "";
+    bottom: 4px;
+    left: 8px;
+    background-color: #D4AF37;
+    height: 4px;
+    width: 100px;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #caa45c;
+  border-radius: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+}
+
+@theme {
+    --color-logo-gold: #D4AF37;
+}
