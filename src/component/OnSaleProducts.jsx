@@ -100,11 +100,7 @@ const OnSaleProducts = () => {
               />
 
               <Link to={`/book-details/${book._id}`}>
-                <span
-                  className="absolute right-5 top-5 backdrop-blur-xl px-4 py-3 rounded-2xl text-white font-bold text-sm
-                   opacity-0 translate-x-4 group-hover:translate-x-0 group-hover:opacity-100
-                   transition-all duration-300 ease-out"
-                >
+                <span className="absolute right-5 top-5 bg-white px-4 py-3 rounded-2xl text-black font-bold text-sm opacity-100 translate-x-0 md:opacity-0 md:translate-x-4 md:group-hover:translate-x-0 md:group-hover:opacity-100 transition-all duration-300 ease-out z-10">
                   <Eye className="w-5 h-5" />
                 </span>
               </Link>
