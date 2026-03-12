@@ -44,7 +44,7 @@ const CartPage = () => {
                 >
                   <div className="flex gap-4">
                     <img
-                      src={`https://backend-book-store-alpha.vercel.app/images/${item?.book?.coverImage}`}
+                      src={item?.book?.coverImage}
                       className="rounded w-28 h-32 object-cover"
                     />
                     <div className="flex flex-col gap-2">
@@ -151,7 +151,12 @@ const CartPage = () => {
               </p>
             </div>
 
-            <button onClick={()=> {navigate("/checkout")}} className="w-full! mt-8! my-5 bg-logo-gold! py-3! rounded-xl! font-bold! flex items-center gap-2 justify-center hover:bg-amber-500! transition-all!">
+            <button
+              onClick={() => {
+                navigate("/checkout");
+              }}
+              className="w-full! mt-8! my-5 bg-logo-gold! py-3! rounded-xl! font-bold! flex items-center gap-2 justify-center hover:bg-amber-500! transition-all!"
+            >
               <SecurityIcon /> Secure Checkout
             </button>
             <div className="flex justify-between text-gray-500 mt-10">

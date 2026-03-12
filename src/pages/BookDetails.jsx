@@ -61,7 +61,7 @@ const BookDetails = () => {
         <div className="flex justify-center md:justify-start">
           <img
             className="w-96 md:w-80 h-112 md:h-120 object-cover rounded-lg shadow hover:scale-105 cursor-pointer transition-all duration-500"
-            src={`https://backend-book-store-alpha.vercel.app/images/${book.coverImage}`}
+            src={book.coverImage}
           />
         </div>
 

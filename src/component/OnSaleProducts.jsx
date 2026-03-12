@@ -95,7 +95,7 @@ const OnSaleProducts = () => {
                 </span>
               )}
               <img
-                src={`https://backend-book-store-alpha.vercel.app/images/${book.coverImage}`}
+                src={book.coverImage}
                 className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-all duration-400"
               />
 

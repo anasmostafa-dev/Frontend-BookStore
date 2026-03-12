@@ -69,7 +69,7 @@ const FeaturedProduct = () => {
               className="relative group flex flex-col mx-auto w-64 bg-gray-50 overflow-hidden gap-3 cursor-pointer border rounded-2xl border-gray-300  p-3 transition-transform duration-300 ease-in-out hover:shadow-xl hover:-translate-y-0.5"
             >
               <img
-                src={`https://backend-book-store-alpha.vercel.app/images/${book.coverImage}`}
+                src={book.coverImage}
                 className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-all duration-400"
               />
 

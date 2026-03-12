@@ -168,7 +168,7 @@ const Checkout = () => {
                       className="flex gap-4 items-center"
                     >
                       <img
-                        src={`https://backend-book-store-alpha.vercel.app/images/${item.book.coverImage}`}
+                        src={item.book.coverImage}
                         alt=""
                         className="w-16 h-20 object-cover rounded-lg shadow-sm"
                       />

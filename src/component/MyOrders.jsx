@@ -71,7 +71,7 @@ const MyOrders = () => {
                       {order.items.slice(0, 4).map((item, idx) => (
                         <img 
                           key={idx}
-                          src={`https://backend-book-store-alpha.vercel.app/images/${item.book?.coverImage}`} 
+                          src={item.book?.coverImage} 
                           className="w-16 h-20 object-cover rounded-xl border-4 border-white shadow-sm"
                         />
                       ))}
