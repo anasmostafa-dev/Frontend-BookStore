@@ -12,7 +12,7 @@ const AllBooks = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const res = await fetch("http://localhost:5000/admin/getAllBooks", {
+        const res = await fetch("https://backend-book-store-alpha.vercel.app/admin/getAllBooks", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -71,7 +71,7 @@ const AllBooks = () => {
             <a key={book._id} href={`/admin/update-book/${book?._id}`}>
               <div className="flex flex-col bg-gray-50 overflow-hidden gap-3 cursor-pointer border rounded-2xl border-gray-300 p-4 transition-all duration-300 hover:shadow-xl hover:-translate-y-0.5">
                 <img
-                  src={`http://localhost:5000/images/${book.coverImage}`}
+                  src={`https://backend-book-store-alpha.vercel.app/images/${book.coverImage}`}
                   className="w-full h-80 object-cover rounded-xl"
                 />
 

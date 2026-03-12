@@ -8,7 +8,7 @@ const MyOrders = () => {
 
   useEffect(() => {
     
-    fetch("http://localhost:5000/orders/my-orders", { credentials: "include" })
+    fetch("https://backend-book-store-alpha.vercel.app/orders/my-orders", { credentials: "include" })
       .then((res) => res.json())
       .then((data) => {
         setOrders(data.orders);
@@ -71,7 +71,7 @@ const MyOrders = () => {
                       {order.items.slice(0, 4).map((item, idx) => (
                         <img 
                           key={idx}
-                          src={`http://localhost:5000/images/${item.book?.coverImage}`} 
+                          src={`https://backend-book-store-alpha.vercel.app/images/${item.book?.coverImage}`} 
                           className="w-16 h-20 object-cover rounded-xl border-4 border-white shadow-sm"
                         />
                       ))}

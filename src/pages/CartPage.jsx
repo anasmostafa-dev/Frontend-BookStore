@@ -44,7 +44,7 @@ const CartPage = () => {
                 >
                   <div className="flex gap-4">
                     <img
-                      src={`http://localhost:5000/images/${item?.book?.coverImage}`}
+                      src={`https://backend-book-store-alpha.vercel.app/images/${item?.book?.coverImage}`}
                       className="rounded w-28 h-32 object-cover"
                     />
                     <div className="flex flex-col gap-2">

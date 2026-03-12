@@ -11,7 +11,7 @@ const OnSaleProducts = () => {
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/books/getAllBooks", {
+    fetch("https://backend-book-store-alpha.vercel.app/api/books/getAllBooks", {
       credentials: "include",
     })
       .then((res) => res.json())
@@ -95,7 +95,7 @@ const OnSaleProducts = () => {
                 </span>
               )}
               <img
-                src={`http://localhost:5000/images/${book.coverImage}`}
+                src={`https://backend-book-store-alpha.vercel.app/images/${book.coverImage}`}
                 className="w-full h-80 object-cover rounded-xl hover:scale-105 transition-all duration-400"
               />
 

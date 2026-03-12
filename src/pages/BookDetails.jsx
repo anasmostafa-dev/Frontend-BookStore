@@ -15,7 +15,7 @@ const BookDetails = () => {
 
   useEffect(() => {
     try {
-      fetch(`http://localhost:5000/api/books/getAllBooks/${id}`)
+      fetch(`https://backend-book-store-alpha.vercel.app/api/books/getAllBooks/${id}`)
         .then((res) => res.json())
         .then((data) => {
           setBook(data.message);
@@ -61,7 +61,7 @@ const BookDetails = () => {
         <div className="flex justify-center md:justify-start">
           <img
             className="w-96 md:w-80 h-112 md:h-120 object-cover rounded-lg shadow hover:scale-105 cursor-pointer transition-all duration-500"
-            src={`http://localhost:5000/images/${book.coverImage}`}
+            src={`https://backend-book-store-alpha.vercel.app/images/${book.coverImage}`}
           />
         </div>
 

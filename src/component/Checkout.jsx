@@ -20,7 +20,7 @@ const Checkout = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5000/orders/create", {
+      const res = await fetch("https://backend-book-store-alpha.vercel.app/orders/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
@@ -168,7 +168,7 @@ const Checkout = () => {
                       className="flex gap-4 items-center"
                     >
                       <img
-                        src={`http://localhost:5000/images/${item.book.coverImage}`}
+                        src={`https://backend-book-store-alpha.vercel.app/images/${item.book.coverImage}`}
                         alt=""
                         className="w-16 h-20 object-cover rounded-lg shadow-sm"
                       />
