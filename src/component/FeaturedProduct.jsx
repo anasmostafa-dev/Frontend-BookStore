@@ -75,7 +75,7 @@ const FeaturedProduct = () => {
 
               <Link to={`/book-details/${book._id}`}>
                 <span
-                  className="absolute right-5 top-5 backdrop-blur-xl px-4 py-3 rounded-2xl text-white font-bold text-sm
+                  className="absolute right-5 top-5 bg-white px-4 py-3 rounded-2xl text-black font-bold text-sm
                    opacity-0 translate-x-4 group-hover:translate-x-0 group-hover:opacity-100
                    transition-all duration-300 ease-out"
                 >

@@ -51,7 +51,6 @@ h3::before {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; 
 }
 
 @theme {

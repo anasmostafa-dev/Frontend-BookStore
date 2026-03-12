@@ -114,17 +114,20 @@ const AddBook = () => {
     fd.append("oldPrice", String(form.price));
     fd.append("stock", String(form.stock));
     if (form.category) fd.append("category", form.category);
-    fd.append("discountPercent", form.discountPercent);
+    fd.append("discountPercent", Number(form.discountPercent) || 0);
     if (form.coverImage) fd.append("coverImage", form.coverImage);
     fd.append("isFeatured", String(form.isFeatured));
     fd.append("isOnSale", String(form.isOnSale));
 
     try {
-      const res = await fetch("https://backend-book-store-alpha.vercel.app/admin/add-book", {
-        method: "POST",
-        body: fd,
-        credentials: "include",
-      });
+      const res = await fetch(
+        "https://backend-book-store-alpha.vercel.app/admin/add-book",
+        {
+          method: "POST",
+          body: fd,
+          credentials: "include",
+        },
+      );
 
       if (res.status === 401 || res.status === 403) {
         setMsg("Not Authorized");
